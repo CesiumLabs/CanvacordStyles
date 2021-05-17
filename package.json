@@ -1,0 +1,30 @@
+{
+  "name": "@canvacord/stylesheet",
+  "version": "1.0.0",
+  "description": "Stylesheet builder for canvacord",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "test": "cd test && ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSnowflake/CanvacordStyles.git"
+  },
+  "keywords": [
+    "canvacord",
+    "stylesheet"
+  ],
+  "author": "Snowflake107",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevSnowflake/CanvacordStyles/issues"
+  },
+  "homepage": "https://github.com/DevSnowflake/CanvacordStyles#readme",
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}

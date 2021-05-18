@@ -13,8 +13,10 @@ $ npm i @canvacord/stylesheet
 const Stylesheet = require("@canvacord/stylesheet");
 const stylesheet = new Stylesheet.Rank({ overwrite: true });
 
-stylesheet.define("avatar", {
-    rounded: true
+stylesheet.create({
+    avatar: {
+        rounded: true
+    }
 });
 
 console.log(stylesheet.toJSON());

@@ -14,7 +14,7 @@ class CanvacordStylesheet {
         this.styles = {};
     }
 
-    define(selector: string, properties: any) {
+    add(selector: string, properties: any) {
         if (selector in this.styles && !this.options.overwrite) return this;
         this.styles[selector] = properties;
         return this;
@@ -25,9 +25,9 @@ class CanvacordStylesheet {
         return {};
     }
 
-    defineBulk(styles: BasicStyle) {
+    create(styles: BasicStyle) {
         for (const prop of Object.keys(styles)) {
-            this.define(prop, styles[prop]);
+            this.add(prop, styles[prop]);
         }
 
         return this;

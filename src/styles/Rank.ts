@@ -10,13 +10,13 @@ class RankStyles extends Stylesheet {
         this.name = "RANK";
     }
 
-    define<T extends keyof RankStylesDefinition>(selector: T, properties: RankStylesDefinition[T]) {
-        super.define(selector, properties);
+    add<T extends keyof RankStylesDefinition>(selector: T, properties: RankStylesDefinition[T]) {
+        super.add(selector, properties);
         return this;
     }
 
-    defineBulk(styles: RankStylesDefinition) {
-        super.defineBulk(styles);
+    create(styles: RankStylesDefinition) {
+        super.create(styles);
         return this;
     }
 
